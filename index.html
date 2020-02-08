@@ -7,126 +7,164 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
+    <!--CSS-->
+    <link rel="stylesheet" href="css/main.css">
+
     <title>OBARA KEN</title>
   </head>
   <body>
-    <!--トップページ-->
-    <div id="top">
-      <h1>小原健の自己紹介サイトです。</h1>
-      <h1>Webエンジニアへの転職を目指しています。</h1>
-    </div>
-
-    <!--経歴-->
-    <div id="personal-history">
-      <h1>History</h1>
-      <div class="row">
-        <ul class="col-sm-6">
-          <li>2015年3月　東北大学理学部　卒業</li>
-          <li>2015年4月　住友大阪セメント株式会社　入社</li>
-          <li>2015年5月〜2018年6月　同社鉱山の採掘現場にて主に生産管理業務に従事</li>
-          <li>2018年7月〜2020年3月　同社東京本社にて主に地質調査業務に従事</li>
+    <!--ナビバー-->
+    <nav class="navbar fixed-top navbar-expand-sm navbar-light bg-light">
+      <a class="navbar-brand" href="#">Top</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">history</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#work">Work</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skill">Skill</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#qualification">Qualification</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
         </ul>
-        <div class="col-sm-6">
-          <p>
-            大学時代に部活動の PR のため、<br>
-            動画編集ソフト(Aviutl)を使用しYoutubeへ投稿したり、<br>
-            画像編集ソフト(gimp)を使用しビラのデザインを作成したりしていました。
-          </p>
-          <p>
-            生産管理業務時代に独学でエクセル VBA を勉強し、<br>
-            毎日のファイルからファイルへのデータ転記作業を自動化し、<br>
-            それまで 1 日 30 分かかっていた作業を数秒で終わるよう改善しました。
-          </p>
-        </div>
       </div>
-    </div>
+    </nav>
 
-    <!--ポートフォリオ-->
-    <div id="portfolio">
-      <h1>Portfolio</h1>
-      <div class="row">
-        <div id="portfolio-first" class="portfolio-style col-sm-6">
-          <p>ポケットティッシュ配布場所を共有するアプリ</p>
-          <a href="#">
-            <img src="#">
-          </a>
-          <p>使用</p>
-        </div>
-
-        <div id="portfolio-second" class="portfolio-style col-sm-6">
-            <p>塩分を管理するアプリ</p>
-            <a href="#">
-              <img src="#">
-            </a>
-            <p>作成中</p>
+    <div class="main">
+      <!--トップページ-->
+      <div id="top" class="row paragraph">
+        <div class="col-sm-4">
+          <div class="center-pos">
+            <img class="img-fluid rounded-circle" src="img/top.jpg" width="200px" height="auto">
           </div>
+          <div class="center-pos">
+            <h1>OBARA KEN</h1>
+          </div>
+        </div>
+        <div class="col-sm-8">
+          <div class="center-pos">
+            <h1>History</h1>
+          </div>
+          <p>
+            　自己紹介サイトです。ご覧いただきありがとうございます。
+            <br>
+            　簡単に経歴をご紹介します。2015年3月に東北大学理学部を卒業後、
+            大手セメント会社で鉱山の管理や地質調査の業務に従事しています。
+            <br>
+            　その業務の中で、エクセルのシート転記作業があったのですが、
+            独学でエクセルVBAを学び、毎日30分かかっていた作業が
+            あっという間に終わるようになりました。
+            プログラミングの威力に感心してITの勉強をはじめ、
+            基本情報処理技術者の資格にも挑戦しました。
+            <br>
+            　それから数年後、転職活動をする中で、Webエンジニアという職種を知り、
+            今まで知らなかったことを後悔しつつ興奮したことを覚えています。
+            昨年10月からRuby on Railsを中心にプログラミングを勉強しています。
+          </p>
+        </div>
       </div>
+
+      <!--ポートフォリオ-->
+      <div id="work" class="paragraph">
+        <div class="center-pos">
+          <h1>Work</h1>
+        </div>
+        <div class="row">
+          <div id="work-first" class="work-style col-sm-6">
+            <p>ポケットティッシュ配布場所を共有するアプリ</p>
+            <a href="#">
+              <img src="#" class="img-thumbnail">
+            </a>
+            <p>使用</p>
+          </div>
+
+          <div id="work-second" class="work-style col-sm-6">
+              <p>塩分を管理するアプリ</p>
+              <a href="#">
+                <img src="#" class="img-thumbnail">
+              </a>
+              <p>作成中</p>
+            </div>
+        </div>
+        
+      </div>
+
+      <!--スキル-->
+      <div id="skill" class="paragraph">
+        <div class="center-pos">
+          <h1>Skill</h1>
+        </div>
+        <p>GitHub / Bootstrap / jQuery / Vue.js / Mysql / Web API / AWS / Rspec / Docker / Firebase / Linux / 競プロ(C++)</p>
+        <ul>
+          <li><a href="www.amazon.co.jp/dp/4774180874">【書籍】たった1秒で仕事が片づく Excel自動化の教科書（2017/12)</a></li>
+          <li><a href="https://techacademy.jp/">【スクール】TeckAcademy Webアプリケーションコース（2019/10〜12）</a></li>
+          <li><a href="https://techacademy.jp/">【スクール】TeckAcademy フロントエンドコース（2019/11〜2020/1）</a></li>
+          <li><a href="https://www.udemy.com/course/aws-and-infra/">【Udemy】AWS：ゼロから実践するAmazon Web Services。手を動かしながらインフラの基礎を習得（2020/1）</a></li>
+          <li><a href="https://www.udemy.com/course/unscared_git/">【Udemy】Git：もう怖くないGit！チーム開発で必要なGitを完全マスター（2020/1）</a></li>
+          <li><a href="https://www.udemy.com/course/unscared_linux/">【Udemy】もう怖くないLinuxコマンド。手を動かしながらLinuxコマンドラインを5日間で身に付けよう（2020/2）</a></li>
+          <li><a href="https://www.udemy.com/course/docker-k/">【Udemy】ゼロからはじめる Dockerによるアプリケーション実行環境構築（学習中）</a></li>
+          <li><a href="https://www.udemy.com/course/ruby-on-rails-action-text/">【Udemy】ハンズオンで学ぶ Ruby on Rails 6 Action Text を支えるデータベースアソシエーション編（学習中）</a></li>
+          <li><a href="www.amazon.co.jp/dp/4774143731">【書籍】3分間ネットワーク基礎講座（2020/1）</a></li>
+          <li><a href="www.amazon.co.jp/dp/4839962227">【書籍】現場で使える Ruby on Rails 5速習実践ガイド（学習中）</a></li>
+          <li><a href="www.amazon.co.jp/dp/4274064069">【書籍】UNIXという考え方（学習中）</a></li>
+        </ul>
+      </div>
+
       
-    </div>
 
-    <!--自己紹介-->
-    <div id="self-introduction">
-      
-    </div>
+      <!--保有資格-->
+      <div id="qualification" class="paragraph">
+        <div class="center-pos">
+          <h1>Qualification</h1>
+        </div>
+        <div class="row">
+          <div class="qualification col-sm-6">
+            <h3>〜自己啓発〜</h3>
+            <ul>
+              <li>日商簿記 3 級(2018 年 2 月)</li>
+              <li>3 級 FP 技能士(2018 年 3 月)</li>
+              <li>QC 検定 2 級(2018 年 4 月)</li>
+              <li>基本情報技術者(2018 年 5 月)</li>
+              <li>TOEIC725 点(2019 年 3 月)</li>
+              <li>ビジネス実務法務 2 級(2019 年 6 月)</li>
+              <li>第 1 種衛生管理者(2019 年 6 月)</li>
+              <li>測量士補(2019 年 7 月)</li>
+            </ul>
 
-    <!--スキル-->
-    <div id="skill">
-      <h1>Skill</h1>
-      <p>現在、Ruby on Railsを中心にプログラミングを学習中です。</p>
-      <p>GitHub / Bootstrap / jQuery / Vue.js / Mysql / Web API / AWS / Rspec / Docker / Firebase / Linux / 競プロ(C++)</p>
-      <h3>受講講座</h3>
-      <ul>
-        <li><a href="https://techacademy.jp/">TeckAcademy Webアプリケーション+（１０月〜１２月）</a></li>
-        <li><a href="https://techacademy.jp/">TeckAcademy フロントエンドコース（１１月〜１月）</a></li>
-        <li><a href="https://www.udemy.com/course/aws-and-infra/">Udemy AWS：ゼロから実践するAmazon Web Services。手を動かしながらインフラの基礎を習得（１月）</a></li>
-        <li><a href="https://www.udemy.com/course/unscared_git/">Udemy Git：もう怖くないGit！チーム開発で必要なGitを完全マスター（１月）</a></li>
-        <li><a href="https://www.udemy.com/course/unscared_linux/">Udemy もう怖くないLinuxコマンド。手を動かしながらLinuxコマンドラインを5日間で身に付けよう（２月）</a></li>
-        <li><a href="https://www.udemy.com/course/docker-k/">Udemy ゼロからはじめる Dockerによるアプリケーション実行環境構築（学習中）</a></li>
-        <li><a href="https://www.udemy.com/course/ruby-on-rails-action-text/">Udemy ハンズオンで学ぶ Ruby on Rails 6 Action Text を支えるデータベースアソシエーション編（学習中）</a></li>
-        <li><a href="www.amazon.co.jp/dp/4774143731">書籍 3分間ネットワーク基礎講座（１月）</a></li>
-        <li><a href="www.amazon.co.jp/dp/4839962227">書籍 現場で使える Ruby on Rails 5速習実践ガイド（学習中）</a></li>
-        <li><a href="www.amazon.co.jp/dp/4274064069">書籍 UNIXという考え方</a></li>
-      </ul>
-    </div>
+          </div>
+          <div class="qualification col-sm-6">
+            <h3>〜会社指示〜</h3>
+            <ul>
+              <li>甲種火薬類取扱保安責任者(2016 年 2 月)</li>
+              <li>危険物取扱者乙 4(2016 年 8 月)</li>
+              <li>危険物取扱者乙 1(2017 年 2 月)</li>
+              <li>露天採掘技術保安管理士(2017 年 12 月)</li>
+              <li>公害防止管理者(一般粉じん)(2017 年 12 月)</li>
+              <li>甲種火薬類製造保安責任者(2019 年 2 月)</li>
+            </ul>
+          </div>
+        </div>
+        
+      </div>
 
+      <!--連絡先-->
+      <div id="contact" class="paragraph">
+        <div class="center-pos">
+          <h1>Contact</h1>
+        </div>
+      </div>
+    </div>
     
-
-    <!--保有資格-->
-    <div id="qualification">
-      <h1>Qualification</h1>
-      <div class="row">
-        <div class="qualification col-sm-6">
-          <h3>自己啓発で取得</h3>
-          <ul>
-            <li>日商簿記 3 級(2018 年 2 月)</li>
-            <li>3 級 FP 技能士(2018 年 3 月)</li>
-            <li>QC 検定 2 級(2018 年 4 月)</li>
-            <li>基本情報技術者(2018 年 5 月)</li>
-            <li>TOEIC725 点(2019 年 3 月)</li>
-            <li>ビジネス実務法務 2 級(2019 年 6 月)</li>
-            <li>第 1 種衛生管理者(2019 年 6 月)</li>
-            <li>測量士補(2019 年 7 月)</li>
-          </ul>
-  
-        </div>
-        <div class="qualification col-sm-6">
-          <h3>会社指示で取得</h3>
-          <ul>
-            <li>甲種火薬類取扱保安責任者(2016 年 2 月)</li>
-            <li>危険物取扱者乙 4(2016 年 8 月)</li>
-            <li>危険物取扱者乙 1(2017 年 2 月)</li>
-            <li>露天採掘技術保安管理士(2017 年 12 月)</li>
-            <li>公害防止管理者(一般粉じん)(2017 年 12 月)</li>
-            <li>甲種火薬類製造保安責任者(2019 年 2 月)</li>
-          </ul>
-        </div>
-      </div>
-      
-    </div>
-
-    <!--連絡先-->
-    <div id="contact">
-    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
