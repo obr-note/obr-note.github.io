@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+p, h4, li, a {
+  color: #555555;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", "sans-serif";
+}
