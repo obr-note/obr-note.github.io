@@ -9,6 +9,7 @@
 
     <!--CSS-->
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animate.css">
 
     <title>OBARA KEN</title>
   </head>
@@ -44,10 +45,10 @@
       <!--トップページ-->
       <div id="top" class="row paragraph mt-5 pt-5 pb-5" style="background-color: #d1edfb;">
         <div class="col-md-4 mt-4 mb-5 pt-5">
-          <div class="text-center">
+          <div class="text-center animated bounce">
             <img class="img-fluid rounded-circle" src="img/top.jpg" width="200px" height="auto">
           </div>
-          <h1 class="text-center mt-5">OBARA KEN</h1>
+          <h1 class="text-center mt-5 animated bounce">OBARA KEN</h1>
         </div>
         <div id="introduction" class="col-md-8 mt-5 mb-5 pb-5">
           <p class="m-5">
@@ -72,7 +73,7 @@
 
       <!--ポートフォリオ-->
       <div id="work" class="paragraph pt-5" style="background-color: #fcecf5;">
-        <h1 class="text-center pt-5 pb-5">Work</h1>
+        <h1 class="text-center pt-5 pb-5 animated">Work</h1>
         <div class="row">
           <div class="col-md-6 text-center">
             <h4>ポケットティッシュ配布場所共有アプリ</h4>
@@ -99,7 +100,7 @@
       <div id="skill" class="paragraph pt-5 pb-5" style="background-color: #f0faf2;">
         <h1 class="text-center pt-5 pb-5">Skill</h1>
         <p class="p-1 text-center">Ruby on Rails / Bootstrap / jQuery / GitHub / Mysql / Web API / AWS / Firebase / Linux / Atcoder(C++)</p>
-        <ul style="list-style: none;" class="pr-1 pl-1 text-center">
+        <ul style="list-style: none; padding-left: 0;" class="pr-1 pl-1 text-center">
           <li class="p-1"><a href="https://www.amazon.co.jp/dp/4774180874">【書籍】たった1秒で仕事が片づく Excel自動化の教科書（2017/12)</a></li>
           <li class="p-1"><a href="https://techacademy.jp/">【スクール】TeckAcademy Webアプリケーションコース（2019/10〜12）</a></li>
           <li class="p-1"><a href="https://techacademy.jp/">【スクール】TeckAcademy フロントエンドコース（2019/11〜2020/1）</a></li>
@@ -120,7 +121,7 @@
         <div class="row">
           <div class="qualification col-md-6">
             <h4 class="text-center pb-3">〜自己啓発〜</h4>
-            <ul style="list-style: none;" class="text-center">
+            <ul style="list-style: none; padding-left: 0;" class="text-center">
               <li class="p-2">日商簿記 3 級(2018 年 2 月)</li>
               <li class="p-2">3 級 FP 技能士(2018 年 3 月)</li>
               <li class="p-2">QC 検定 2 級(2018 年 4 月)</li>
@@ -134,7 +135,7 @@
           </div>
           <div class="qualification col-md-6">
             <h4 class="text-center pb-3">〜会社指示〜</h4>
-            <ul style="list-style: none;" class="text-center">
+            <ul style="list-style: none; padding-left: 0;" class="text-center">
               <li class="p-2">甲種火薬類取扱保安責任者(2016 年 2 月)</li>
               <li class="p-2">危険物取扱者乙 4(2016 年 8 月)</li>
               <li class="p-2">危険物取扱者乙 1(2017 年 2 月)</li>
@@ -151,25 +152,35 @@
       <div id="contact" class="paragraph pt-5 pb-5" style="background-color: #faf7f0;">
         <h1 class="text-center pt-5 pb-5">Contact</h1>
         <div class="text-center">
-          <a href="k33mdukb9n@yahoo.co.jp">k33mdukb9n@yahoo.co.jp</a>
+          <a href="mailto:k33mdukb9n@yahoo.co.jp">k33mdukb9n@yahoo.co.jp</a><br>
         </div>
-        <div class="text-center mt-3 pb-5">
-          <a href="k33mdukb9n@yahoo.co.jp"><i class="far fa-envelope fa-3x"></i></a>
+        <div class="text-center mt-3 pb-3">
+          <a href="mailto:k33mdukb9n@yahoo.co.jp"><i class="far fa-envelope fa-3x"></i></a>
           <a href="https://twitter.com/2_obr" class="ml-3"><i class="fab fa-twitter fa-3x"></i></a>
           <a href="https://github.com/obr-note" class="ml-3"><i class="fab fa-github fa-3x"></i></a>
         </div>
-        <p class="text-center p-3">ご連絡お待ちしております</p>
+        <div class="text-center">
+          <a href="https://atcoder.jp/users/obrnote">AtCoder</a>
+        </div>
+        <p class="text-center p-5">ご連絡お待ちしております</p>
       </div>
     </div>
-    
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
     <!-- Font Awesome -->
     <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"></script>
+
+    <!-- waypointのライブラリ -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+
+    <!--main.jsの読み込み-->
+    <script src="js/main.js"></script>
 
   </body>
 </html>
