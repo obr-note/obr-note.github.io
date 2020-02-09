@@ -1,20 +1,23 @@
 
-//ナビバーをクリックしたら移動
-$(.nav-link).on("click", (e) => {
-  e.preventDefault();
+var $j = jQuery.noConflict(true);
 
-  const tabId = $(e.currentTarget).attr('href');
-  const contentsTop = $(tabId).offset().top;
-  $('html, body').animate({ scrollTop: contentsTop }, 600, 'swing');
-});
 
 //ふわっと出現する
-$('.animated').waypoint({
-  handler(direction) {
+$j('.animated').waypoint({
+  handler: function(direction) {
     if(direction === 'down') {
-      $(this.element).addClass('fadeInUp');
+      $j(this.element).addClass('fadeInUp');
       this.destroy();
     }
   },
   offset: '100%',
+});
+
+//ナビバーをクリックしたら移動
+$j(.nav-link).on("click", (e) => {
+  e.preventDefault();
+
+  const tabId = $j(e.currentTarget).attr('href');
+  const contentsTop = $j(tabId).offset().top;
+  $j('html, body').animate({ scrollTop: contentsTop }, 600);
 });
