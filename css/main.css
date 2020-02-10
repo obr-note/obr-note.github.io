@@ -1,9 +1,9 @@
 @charset "UTF-8";
 
 p, h1, h4, li, a {
-  color: #555555;
+  color: #1a1a1a;
   font-weight: bold;
-  text-shadow: 1px 1px 1px #ffffff, -1px 1px 1px #ffffff, 1px -1px 1px #ffffff, -1px -1px 1px #ffffff;
+  text-shadow: 3px 3px 3px #ffffff, -3px 3px 3px #ffffff, 3px -3px 3px #ffffff, -3px -3px 3px #ffffff;
 };
 
 a {
