@@ -1,12 +1,9 @@
 
-var $j = jQuery.noConflict(true);
-
-
 //ふわっと出現する
-$j('.animated').waypoint({
+$('.animated').waypoint({
   handler: function(direction) {
     if(direction === 'down') {
-      $j(this.element).addClass('fadeInUp');
+      $(this.element).addClass('fadeInUp');
       this.destroy();
     }
   },
@@ -14,10 +11,13 @@ $j('.animated').waypoint({
 });
 
 //ナビバーをクリックしたら移動
-$j(.nav-link).on("click", (e) => {
+$('.nav-link').on("click", (e) => {
   e.preventDefault();
+  
+  const tabId = $(e.currentTarget).attr('href');
+  const contentsTop = $(tabId).offset().top;
+  $('html, body').animate({ scrollTop: contentsTop }, 600);
 
-  const tabId = $j(e.currentTarget).attr('href');
-  const contentsTop = $j(tabId).offset().top;
-  $j('html, body').animate({ scrollTop: contentsTop }, 600);
+  // ハンバーガーメニューを閉じる
+  $('.navbar-collapse').collapse('hide');
 });
