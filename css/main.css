@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-p, h1, h4, li, a {
+p, h1, h4, li, a, button {
   color: #1a1a1a;
   font-weight: bold;
   text-shadow: 3px 3px 3px #ffffff, -3px 3px 3px #ffffff, 3px -3px 3px #ffffff, -3px -3px 3px #ffffff;
